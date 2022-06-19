@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html"; charset="utf-8" />
+        <title>Little Bits API</title>
+    </head>
+
+    <body>
+        <div id="title">
+            <h1>
+                <b>Little Bits API</b> 
+                <small>- Documentation</small>
+            </h1>
+            <p>
+                The Little Bits Oscars API allows users to obtain information about the films which were themselves or which had crew or castmembers nominated for Oscars Awards.<br>
+                This page lists instructions for the use of the API.
+            </p>
+        </div>
+        
+        <div id="singleton">
+            <h2>Find Nomination by ID</h2>
+            <p>
+                An Oscars nomination can be located in our database through an ID lookup.<br>
+                This is accessed through a GET request to the /ID/ endpoint. URL example:<br>
+                <strong>https://little-bits-final.herokuapp.com/ID/[example-id]</strong><br>
+                A valid nomination ID will be an integer with a value between 0 and 8910.<br>
+                A nomination's ID value can be found using a /search/ query. This information 
+                is located under the 'ID' key of a chosen element of the search response array.
+            </p>
+            <p>
+                A valid ID lookup will yield a single JSON object with this format:<br>
+                <dl id="response description">
+                    {<br>
+                        <div id="indent">
+                            <dt>"category":</dt>        <dd>&lt; The Oscars nomination category - type: string &gt;,</dd>
+                            <dt>"entity":</dt>          <dd>&lt; Film or person nominated - type: string &gt;,</dd>
+                            <dt>"winner":</dt>          <dd>&lt; Denotes a category winner or loser - type: bool &gt;</dd>,
+                            <dt>"year":</dt>            <dd>&lt; Year nominated - type: int &gt;,</dd><br>
+                            <dt>"general_cat":</dt>     <dd>&lt; General category group (for redundant categories with different names) - type: string &gt;,</dd>
+                            <dt>"tid":</dt>             <dd>&lt; TMDb ID, used internally to make external API calls - type: int &gt;,</dd>
+                            <dt>"poster":</dt>          <dd>&lt; TMDb poster image URL segment - type: string &gt;,</dd>
+                            <dt>"imdbLink":</dt>        <dd>&lt; Link to IMDb page for the film related to this nomination - type: string &gt;,</dd>
+                            <dt>"movie":</dt>           <dd>&lt; Name of the film related to this nomination - type: string &gt;,</dd>
+                            <dt>"ID":</dt>              <dd>&lt; Nomination ID used for ID lookup - type: int &gt;</dd>
+                            <dt>"ratings":</dt>         <dd>&lt; List of ratings from a number of sources e.g. Rotten Tomatoes - type: array of objects with keys 'Source', and 'Value', both type string &gt;,</dd>
+                            <dt>"plot":</dt>            <dd>&lt; Short synopsis of the film's plot - type: string &gt;,</dd>
+                            <dt>"time":</dt>            <dd>&lt; Runtime of the film related to this nomination - type: string &gt;,</dd>
+                            <dt>"director":</dt>        <dd>&lt; Name of the director of the film related to this nomination - type: string &gt;,</dd>
+                            <dt>"cast":</dt>            <dd>&lt; List of the names of the main cast members of the movie associated with this nomination - type: string &gt;,</dd>
+                            <dt>"watchProvider":</dt>   <dd>&lt; Link to the TMDb watch provider page for the film related to this nomination - type: string &gt;</dd>
+                        </div>
+                    }<br>
+                </dl>
+            </p>
+        </div>
+
+        <div id="multiple">
+            <h2>Database Search</h2>
+            <p>
+                The database can be searched through a GET request at the /search/ endpoint. URL example:<br>
+                <strong>https://little-bits-final.herokuapp.com/search/?[example-query]</strong><br>
+                Valid queries and their formats:<br>
+            </p>
+            
+            <ul>
+                <li>w=&lt;1 or 0&gt;</li>
+                <li>yr[]=&lt;int from 1927 to 2017&gt;</li>
+                <li>e[]=&lt;Movie or actor name string&gt;</li>
+                <li>c[]=&lt;Category name string&gt;</li>
+                <li>gc[]=&lt;General category name string&gt;</li>
+            </ul>
+                
+            <ul>
+                <li>The 'w' query filters results by whether they won(1) or lost(0) in their category.</li>
+                <li>
+                    The 'yr' query filters results by the year in which they were nominated. Valid years are between 1927 and 2017.<br>
+                    Up to two of these queries can be made per request, allowing for a search of a range of years in chronological order.
+                </li>
+                <li>The 'e' query filters results by the name of the person or film nominated. *</li>
+                <li>The 'c' query filters results by the precise name of the category which they were nominated for. *</li>
+                <li>
+                    The 'gc' query filters results by a general category name, which refers to a group of closely related categories. *<br>
+                    General category names are as follows:
+
+                    <ul>
+                        <li>PICTURE</li>
+                        <li>FILM</li>
+                        <li>ACTOR</li>
+                        <li>ACTRESS</li>
+                        <li>ACTOR SUPPORT</li>
+                        <li>ACTRESS SUPPORT</li>
+                        <li>DIRECTING</li>
+                        <li>SHORT+FILM</li>
+                        <li>WRITING+(Original)</li>
+                        <li>WRITING+(Adaptation)</li>
+                        <li>WRITING+TITLE</li>
+                        <li>MUSIC</li>
+                        <li>CINEMATOGRAPHY</li>
+                        <li>ART+DIRECTION</li>
+                        <li>OUTSTANDING+PRODUCTION</li>
+                        <li>EFFECTS</li>
+                        <li>MAKEUP</li>
+                        <li>COSTUME</li>
+                        <li>SOUND</li>
+                        <li>DOC</li>
+                        <li>ANIMATED</li>
+                        <li>FOREIGN</li>
+                    </ul>
+                </li>
+                * = Any number of these queries can be made in a request.
+            </ul>
+            
+            <p>
+                A database search will return an array of JSON objects. Each of these objects will follow the format below:
+
+                <dl id="response description">
+                    {<br>
+                        <div id="indent">
+                            <dt>"category":</dt>        <dd>&lt; The Oscars nomination category - type: string &gt;,</dd>
+                            <dt>"entity":</dt>          <dd>&lt; Film or person nominated - type: string &gt;,</dd>
+                            <dt>"winner":</dt>          <dd>&lt; Denotes a category winner or loser - type: bool &gt;</dd>,
+                            <dt>"year":</dt>            <dd>&lt; Year nominated - type: int &gt;,</dd><br>
+                            <dt>"general_cat":</dt>     <dd>&lt; General category group (for redundant categories with different names) - type: string &gt;,</dd>
+                            <dt>"tid":</dt>             <dd>&lt; TMDb ID, used internally to make external API calls - type: int &gt;,</dd>
+                            <dt>"poster":</dt>          <dd>&lt; TMDb poster image URL segment - type: string &gt;,</dd>
+                            <dt>"imdbLink":</dt>        <dd>&lt; Link to IMDb page for the film related to this nomination - type: string &gt;,</dd>
+                            <dt>"movie":</dt>           <dd>&lt; Name of the film related to this nomination - type: string &gt;,</dd>
+                            <dt>"ID":</dt>              <dd>&lt; Nomination ID used for ID lookup - type: int &gt;</dd>
+                        </div>
+                    }<br>
+                </dl>
+            </p>
+        </div>
+    </body>   
+</html>

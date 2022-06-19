@@ -1,0 +1,25 @@
+API Search Query Example
+
+localhost:3000/search/?yr[]=2016&gc[]=ACTOR&e[]=Jack+Nicholson&w=1
+
+year query 			-- yr[]={whatever year}
+category query 		-- c[]={whatever category}
+general_cat query 	-- gc[]={whatever general_cat}
+entity query 		-- e[]={whatever entity}
+winner query    	-- w={1 or 0}
+
+These query statements can be placed in any order in your url. If you're searching for multiples of whatever key, just make multiple queries i.e. :
+
+
+localhost:3000/search/?gc[]=ACTOR&gc[]=PICTURE
+
+Multiple years - same thing, but only the first and last years:
+
+localhost:3000/search/?yr[]=2016&yr[]=2019
+
+List of queries must start with "?" and each must be separated by "&"
+
+
+API ID Query Example
+
+localhost:3000/?ID={Whatever ID#}

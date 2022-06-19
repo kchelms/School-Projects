@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Search.css">
+</head>
+<body>
+    <div class="main-bg">
+        <section>
+            <header>
+                <a href="#">Little Bits</a>
+            </header>
+
+            <h1>Oscar Movie Nominations</h1>
+
+            <div class="form-containter">
+                <form id="acc">
+
+                            <label for="m_name">Enter movie name or actor</label>
+                            <input type="text" name="m_name" id="m_name">
+                            <p id="exmp">Example: "The Avengers" or "Robert Downey JR"</p>
+
+
+                        <p>Categories</p>
+
+
+                            <label for="category"></label>
+                            <select name="cats" id="cats" multiple="multiple">
+                                <option value="ACTOR">ACTOR</option>
+                                <option value="ACTRESS">ACTRESS</option>
+                                <option value="DIRECTING">DIRECTING</option>
+                                <option value="PICTURE">PICTURE</option>
+                                <option value="SHORT FILM">SHORT FILM</option>
+                                <option value="WRITING (Original)">WRITING (Original)</option>
+                                <option value="WRITING (Adaptation)">WRITING (Adaptation)</option>
+                                <option value="MUSIC">MUSIC</option>
+                                <option value="CINEMATOGRAPHY">CINEMATOGRAPHY</option>
+                                <option value="ART DIRECTION">ART DIRECTION</option>
+                                <option value="OUTSTANDING PRODUCTION">OUTSTANDING PRODUCTION</option>
+                                <option value="EFFECTS">EFFECTS</option>
+                                <option value="MAKEUP">MAKEUP</option>
+                                <option value="COSTUME">COSTUME</option>
+                                <option value="SOUND">SOUND</option>
+                                <option value="DOC">DOC</option>
+                                <option value="ACTOR SUPPORT">ACTOR SUPPORT</option>
+                                <option value="ACTRESS SUPPORT">ACTRESS SUPPORT</option>
+                                <option value="ANIMATED">ANIMATED</option>
+                                <option value="FOREIGN">FOREIGN</option>
+                                <option value="WRITING TITLE">WRITING TITLE</option>
+                                <option value="FILM">FILM</option>
+                            </select>
+
+
+                        <p>Year</p>
+                        
+
+                            <input type="text" name="ystart" maxlength="4" id="m_start">
+                            <label for="m_year"> to </label>
+                            <input type="text" name="yend" maxlength="4" id="m_end">
+
+
+
+                            <p>Did they win or lose?</p>
+                            <select name="wol" id="wol">
+                                <option value="Select">Select</option>
+                                <option value="Win">Win</option>
+                                <option value="Lose">Lose</option>
+                            </select>
+
+
+                        <p></p>
+                        <input type="submit" value="Search" <!--onclick="location.href='Result.html'"-->
+                        <p></p>
+                        <a id="res">Click for Results</a>
+                        <p></p>
+                    </div>
+                </form>
+                <form id="single">
+                    <label for="m_name">Enter in Nomination ID</label>
+                    <input type="text" name="m_id" id="x_sing">
+
+                    <p></p>
+                    <input type="submit" value="Search">
+                    <p></p>
+
+                    <p></p>
+                    <a id="single_res">Click for Singleton Result</a>
+                    <p></p>
+                </form>
+            </div>
+        </section>
+    </div>
+    <script src="JS/Search.js"></script>
+</body>
+</html>

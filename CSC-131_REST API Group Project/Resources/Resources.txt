@@ -1,0 +1,6 @@
+front end = http://www.figma.com/education
+api's = https://public-apis.io/free-movies-apis-collection
+https://www.omdbapi.com/
+
+Rest api = https://restfulapi.net/ , https://www.sitepoint.com/developers-rest-api/ , https://www.youtube.com/watch?v=lsMQRaeKNDk ,
+https://www.youtube.com/watch?v=rtWH70_MMHM

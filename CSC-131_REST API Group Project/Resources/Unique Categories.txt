@@ -1,0 +1,241 @@
+0: "ACTOR"
+
+89: "ACTOR IN A LEADING ROLE"
+
+GENERAL: "ACTOR IN A LEADING ROLE"
+​​​
+
+
+1: "ACTRESS"
+
+90: "ACTRESS IN A LEADING ROLE"
+
+GENERAL: "ACTRESS IN A LEADING ROLE"
+
+
+
+29: "ACTOR IN A SUPPORTING ROLE"
+
+
+​​​
+30: "ACTRESS IN A SUPPORTING ROLE"
+
+
+​​​
+4: "DIRECTING (Comedy Picture)"
+​​​
+5: "DIRECTING (Dramatic Picture)"
+​​​
+13: "DIRECTING"
+
+
+​​​
+7: "OUTSTANDING PICTURE"
+​​​
+8: "UNIQUE AND ARTISTIC PICTURE"
+
+45: "OUTSTANDING MOTION PICTURE"
+
+50: "BEST MOTION PICTURE"
+
+69: "BEST PICTURE"
+
+
+
+118: "ANIMATED FEATURE FILM"
+
+
+
+42: "DOCUMENTARY (Short Subject)"
+​​​
+46: "DOCUMENTARY"
+​​​
+49: "DOCUMENTARY (Feature)"​​​
+
+
+
+20: "SHORT SUBJECT (Cartoon)"
+​​​
+21: "SHORT SUBJECT (Comedy)"
+​​​
+22: "SHORT SUBJECT (Novelty)"
+
+31: "SHORT SUBJECT (Color)"
+​​​
+32: "SHORT SUBJECT (One-reel)"
+​​​
+33: "SHORT SUBJECT (Two-reel)"
+
+63: "SHORT SUBJECT (Live Action)"
+
+81: "SHORT SUBJECT (Animated)"
+
+84: "SHORT FILM (Animated)"
+​​​
+85: "SHORT FILM (Live Action)"
+
+105: "SHORT FILM (Dramatic Live Action)"
+
+GENERAL: "SHORT FILM"
+
+
+
+58: "FOREIGN LANGUAGE FILM"
+
+​​​
+
+10: "WRITING (Original Story)"
+
+14: "WRITING"
+
+28: "WRITING (Screenplay)"
+
+41: "WRITING (Original Screenplay)"
+
+48: "WRITING (Original Motion Picture Story)"
+
+51: "WRITING (Motion Picture Story)"
+
+55: "WRITING (Story and Screenplay)"
+
+60: "WRITING (Screenplay--Original)"
+
+65: "WRITING (Story and Screenplay--written directly for the screen)"
+
+76: "WRITING (Story and Screenplay--based on material not previously published or produced)"
+
+78: "WRITING (Story and Screenplay--based on factual material or material not previously published or produced)"
+
+92: "WRITING (Screenplay Written Directly for the Screen--based on factual material or on story material not previously published or produced)"
+
+99: "WRITING (Screenplay Written Directly for the Screen)"
+
+GENERAL: WRITING (Original)
+
+
+​​​
+9: "WRITING (Adaptation)"
+
+59: "WRITING (Screenplay--Adapted)"
+
+64: "WRITING (Screenplay--based on material from another medium)"
+
+86: "WRITING (Screenplay Adapted from Other Material)"
+
+98: "WRITING (Screenplay Based on Material from Another Medium)"
+
+111: "WRITING (Screenplay Based on Material Previously Produced or Published)"
+
+119: "WRITING (Adapted Screenplay)"
+
+GENERAL: WRITING (Adaptation)
+
+
+
+11: "WRITING (Title Writing)"
+
+
+
+25: "MUSIC (Scoring)"
+​​​
+26: "MUSIC (Song)"
+
+35: "MUSIC (Original Score)"
+
+43: "MUSIC (Music Score of a Dramatic Picture)"
+​​​
+44: "MUSIC (Scoring of a Musical Picture)"
+
+47: "MUSIC (Music Score of a Dramatic or Comedy Picture)"
+
+67: "MUSIC (Music Score--substantially original)"
+​​​
+68: "MUSIC (Scoring of Music--adaptation or treatment)"
+
+72: "MUSIC (Original Music Score)"
+​​​
+73: "MUSIC (Original Score--for a motion picture [not a musical])"
+​​​
+74: "MUSIC (Score of a Musical Picture--original or adaptation)"
+​​​
+75: "MUSIC (Song--Original for the Picture)"
+
+77: "MUSIC (Original Song Score)"
+
+79: "MUSIC (Original Dramatic Score)"
+​​​
+80: "MUSIC (Scoring: Adaptation and Original Song Score)"
+
+83: "MUSIC (Scoring: Original Song Score and Adaptation -or- Scoring: Adaptation)"
+
+87: "MUSIC (Original Song)"
+
+91: "MUSIC (Original Song Score and Its Adaptation or Adaptation Score)"
+
+97: "MUSIC (Adaptation Score)"
+
+103: "MUSIC (Original Song Score and Its Adaptation -or- Adaptation Score)"
+
+109: "MUSIC (Original Song Score or Adaptation Score)"
+
+115: "MUSIC (Original Musical or Comedy Score)"
+
+
+
+3: "CINEMATOGRAPHY"
+
+36: "CINEMATOGRAPHY (Black-and-White)"
+​​​
+37: "CINEMATOGRAPHY (Color)"
+
+
+
+2: "ART DIRECTION"
+
+39: "ART DIRECTION (Black-and-White)"
+​​​
+40: "ART DIRECTION (Color)"
+
+
+​​​
+15: "OUTSTANDING PRODUCTION"
+
+122: "PRODUCTION DESIGN"
+
+
+​​​
+16: "SOUND RECORDING"​​​
+
+66: "SOUND"
+
+70: "SOUND EFFECTS"
+
+108: "SOUND EFFECTS EDITING"
+
+117: "SOUND EDITING"
+
+120: "SOUND MIXING"
+
+
+24: "FILM EDITING"
+
+
+
+38: "SPECIAL EFFECTS"​​
+
+71: "SPECIAL VISUAL EFFECTS"
+
+93: "VISUAL EFFECTS"
+
+
+​​​
+52: "COSTUME DESIGN (Black-and-White)"
+​​​
+53: "COSTUME DESIGN (Color)"​​​
+
+62: "COSTUME DESIGN"
+
+106: "MAKEUP"
+
+121: "MAKEUP AND HAIRSTYLING"​​​
+
