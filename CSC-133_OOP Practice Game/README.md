@@ -6,9 +6,19 @@
 </p>
 
 <ul>
-    <li>Classes</li>
-    <li>Abstract classes</li>
+    <li>Classes & Objects</li>
+    <li>Abstract Classes</li>
     <li>Interfaces</li>
-    <li>Design Patterns (Observer, etc.)</li>
     <li>Custom Types</li>
+    <li>Design Patterns:
+        <ul>
+            <li>Model-View-Controller</li>
+            <li>Singleton</li>
+            <li>Observer</li>
+            <li>Command</li>
+            <li>Strategy</li>
+            <li>Visitor</li>
+            <li>Factory Method</li>
+        </ul>
+    </li>
 </ul>
